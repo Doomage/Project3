@@ -29,13 +29,15 @@ namespace Project3
             //sugkrish vash LastName
             var CompareByName = new CompareLastName();
             studentslist.Sort(CompareByName);
-
+            Console.WriteLine("Sorted By Last Name\n");
             foreach (student part in studentslist)
             {
                 Console.WriteLine($"{ part.Name} | { part.LastName} | { part.Age} | { part.Height} | { part.Phone} | { part.Date} | { part.Tuition} | { part.conduct}");
             }
-            Console.WriteLine("---------------------------------");
 
+
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("Sorted By Age\n");
             //sugkrish vash ilikias
             var CompareByAge = new CompareAge();
             studentslist.Sort(CompareByAge);
@@ -43,7 +45,9 @@ namespace Project3
             {
                 Console.WriteLine($"{ part.Name} | { part.LastName} | { part.Age} | { part.Height} | { part.Phone} | { part.Date} | { part.Tuition} | { part.conduct}");
             }
+
             Console.WriteLine("---------------------------------");
+            Console.WriteLine(("Sorted By Phone\n"));
             //sugkrish vash phone
             var CompareByPhone = new ComparePhone();
             studentslist.Sort(CompareByPhone);
