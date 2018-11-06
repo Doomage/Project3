@@ -18,15 +18,15 @@ namespace Project3
             string[] Lines = System.IO.File.ReadAllLines(Path);
             foreach (string line in Lines)
             {
-                //Student student = new Student();
                 parts.Add(line.Split(','));
-
             }
             foreach (string[] part in parts)
             {
                 student student1 = new student(part[0], part[1], part[2], part[3], part[4], part[5], part[6]);
                 studentslist.Add(student1);
             }
+            studentslist.RemoveAt(0);
+            //sugkrish vash LastName
             var CompareByName = new CompareLastName();
             studentslist.Sort(CompareByName);
 
