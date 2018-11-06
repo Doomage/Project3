@@ -38,6 +38,7 @@
     <Compile Include="CompareLastName.cs" />
     <Compile Include="student.cs" />
     <Compile Include="ComparePhone.cs" />
+    <Compile Include="File.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
